@@ -33,7 +33,7 @@
   "scripts": {
     "lint": "eslint 'src/**/*.{js,jsx}'",
     "clean": "rm -f www/build.js www/build.css",
-    "start": "node src/server/index.js",
-    "build": "NODE_ENV=production webpack --config src/server/webpack.config.js --progress --display-error-details"
+    "start": "webpack-dev-server --hot --inline",
+    "build": "NODE_ENV=production webpack --progress --display-error-details"
   }
 }

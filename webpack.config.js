@@ -41,10 +41,10 @@ const config = {
   context: __dirname,
   devtool: production ? undefined : 'inline-source-map',
   entry: [
-    './../client/index.jsx',
+    './src/index.jsx',
   ],
   output: {
-    path: path.join(__dirname, '../../www'),
+    path: './www',
     filename: 'bundle.js',
     publicPath: '/',
   },
@@ -57,6 +57,11 @@ const config = {
   },
   node: {
     fs: 'empty',
+  },
+  devServer: {
+    quiet: false,
+    historyApiFallback: true,
+    contentBase: './www'
   },
   module: {
     loaders: [
