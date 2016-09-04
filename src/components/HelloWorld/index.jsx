@@ -1,8 +1,8 @@
 import React from 'react';
-import style from './style';
+import style from './style.scss';
 
 function HelloWorld({ name }) {
-  return <div className='hello'>Hello {name}!</div>;
+  return <div className="hello">Hello {name}!</div>;
 }
 
 HelloWorld.propTypes = {

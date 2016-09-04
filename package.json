@@ -1,5 +1,5 @@
 {
-  "name": "test",
+  "name": "react-starter-kit",
   "devDependencies": {
     "autoprefixer": "^6.4.0",
     "babel-cli": "^6.11.4",
@@ -12,10 +12,13 @@
     "babel-preset-stage-0": "^6.5.0",
     "css-loader": "^0.23.1",
     "eslint": "^3.3.0",
+    "eslint-config-airbnb": "^10.0.1",
+    "eslint-loader": "^1.5.0",
     "eslint-plugin-babel": "^3.3.0",
     "eslint-plugin-import": "^1.13.0",
     "eslint-plugin-react": "^6.0.0",
     "extract-text-webpack-plugin": "^1.0.1",
+    "html-webpack-plugin": "^2.22.0",
     "json-loader": "^0.5.4",
     "mobx": "^2.4.3",
     "mobx-react": "^3.5.5",
@@ -25,15 +28,15 @@
     "style-loader": "^0.13.1"
   },
   "dependencies": {
+    "file-loader": "^0.9.0",
     "react": "^15.3.0",
     "react-dom": "^15.3.0",
     "webpack": "^1.13.1",
     "webpack-dev-server": "^1.14.1"
   },
   "scripts": {
-    "lint": "eslint 'src/**/*.{js,jsx}'",
-    "clean": "rm -f www/build.js www/build.css",
-    "start": "webpack-dev-server --hot --inline",
-    "build": "NODE_ENV=production webpack --progress --display-error-details"
+    "build": "NODE_ENV=production webpack --progress --display-error-details",
+    "clean": "rm -fr build",
+    "start": "webpack-dev-server --hot --inline"
   }
 }

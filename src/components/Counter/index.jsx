@@ -1,5 +1,5 @@
 import React from 'react';
-import style from './style';
+import style from './style.scss';
 
 class Counter extends React.Component {
   static propTypes = {
@@ -8,19 +8,19 @@ class Counter extends React.Component {
 
   constructor(props) {
     super(props);
-    this.state = {count: props.start};
+    this.state = { count: props.start };
   }
 
   render() {
     return (
       <div
-        className='counter'
-        onClick={() => this.setState({count: this.state.count + 1})}
+        className="counter"
+        onClick={() => this.setState({ count: this.state.count + 1 })}
       >
         {this.state.count}
       </div>
     );
   }
-};
+}
 
 export default Counter;
