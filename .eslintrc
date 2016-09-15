@@ -5,10 +5,7 @@
   },
   "parser": "babel-eslint",
   "extends": "airbnb",
-  "settings": {
-      "import/ignore": [".scss$", "style"],
-  },
   "rules": {
-      "no-unused-vars": ["error", {"varsIgnorePattern": "style"}]
+    "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }]
   }
 }

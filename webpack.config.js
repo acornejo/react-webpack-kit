@@ -5,9 +5,9 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const ExtractTextWebpackPlugin = require('extract-text-webpack-plugin');
 
 const production = process.env.NODE_ENV === 'production';
-const appSrc = path.resolve(__dirname, "src");
-const appEntry = path.join(appSrc, "index.jsx");
-const appHtml = path.join(appSrc, "index.html");
+const appSrc = path.resolve(__dirname, 'src');
+const appEntry = path.join(appSrc, 'index.js');
+const appHtml = path.join(appSrc, 'index.html');
 
 const plugins = {
   prod: [
