@@ -1,5 +1,5 @@
 import React from 'react';
-import './style.scss';
+import './style.css';
 
 function HelloWorld({ name }) {
   return <div className="hello">Hello {name}!</div>;

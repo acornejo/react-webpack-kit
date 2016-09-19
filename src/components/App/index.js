@@ -1,13 +1,13 @@
 import React from 'react';
-import style from './style.scss';
 
 import HelloWorld from '../HelloWorld';
 import Counter from '../Counter';
 import logo from '../../images/logo.png';
+import './style.css';
 
 function App() {
   return (
-    <div style={style}>
+    <div className="app">
       <img src={logo} alt="logo" />
       <HelloWorld name="world" />
       Try clicking on the counters below:
