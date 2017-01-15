@@ -2,6 +2,7 @@
     "presets": [
         "es2015",
         "stage-0",
-        "react"
+        "react",
+        "react-native-stage-0/decorator-support"
     ]
 }
